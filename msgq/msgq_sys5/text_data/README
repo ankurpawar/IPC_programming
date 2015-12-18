@@ -1,0 +1,11 @@
+process1 communicate with process2 suing system 5 message queue.
+
+step1 : ~$make
+this will compile the process1.c and process2.c
+
+step2 : ~$ ./start.sh
+run start.sh script to start. This script will send process2 in 
+background. Process2 receives data from the queue. Process1
+will be in the foreground to take input. Write some data 
+on console and hit enter. Input end to stop both the
+processes.

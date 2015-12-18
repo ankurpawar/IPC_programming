@@ -1,0 +1,11 @@
+process1 will send binary data to process2 suing system 5 message queue.
+
+
+step1 : ~$make
+this will compile the process1.c and process2.c
+
+step2 : ~$ ./start.sh
+run start.sh script to start. This script will send process2 in 
+background. Process2 receives data from the queue. Process1
+will be in the foreground. Process1 write date,time,second in
+message queue and process2 will read it.
